@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <link rel="shortcut icon" href="logo.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Topchyi Krystyna</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+  	<link rel="stylesheet" type="text/css" href="css.css">
+  	<script src="javascript.js"></script>
+    <script src="anime.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/72c9b3c5c6.js" crossorigin="anonymous"></script>
+    <style media="all" id="fa-v4-font-face">/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot);src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.svg#fontawesome) format("svg")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.eot);src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.svg#fontawesome) format("svg")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot);src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.svg#fontawesome) format("svg");unicode-range:U+f004-f005,U+f007,U+f017,U+f022,U+f024,U+f02e,U+f03e,U+f044,U+f057-f059,U+f06e,U+f070,U+f075,U+f07b-f07c,U+f080,U+f086,U+f089,U+f094,U+f09d,U+f0a0,U+f0a4-f0a7,U+f0c5,U+f0c7-f0c8,U+f0e0,U+f0eb,U+f0f3,U+f0f8,U+f0fe,U+f111,U+f118-f11a,U+f11c,U+f133,U+f144,U+f146,U+f14a,U+f14d-f14e,U+f150-f152,U+f15b-f15c,U+f164-f165,U+f185-f186,U+f191-f192,U+f1ad,U+f1c1-f1c9,U+f1cd,U+f1d8,U+f1e3,U+f1ea,U+f1f6,U+f1f9,U+f20a,U+f247-f249,U+f24d,U+f254-f25b,U+f25d,U+f271-f274,U+f279,U+f28b,U+f28d,U+f2b5-f2b6,U+f2b9,U+f2bb,U+f2bd,U+f2c1-f2c2,U+f2d0,U+f2d2,U+f2dc,U+f2ed,U+f3a5,U+f3d1,U+f410}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.eot);src:url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-v4deprecations.svg#fontawesome) format("svg");unicode-range:U+f003,U+f006,U+f014,U+f016,U+f01a-f01b,U+f01d,U+f040,U+f045-f047,U+f05c-f05d,U+f07d-f07e,U+f087-f088,U+f08a-f08b,U+f08e,U+f090,U+f096-f097,U+f0a2,U+f0e4-f0e6,U+f0ec-f0ee,U+f0f5-f0f7,U+f10c,U+f112,U+f114-f115,U+f11d,U+f123,U+f132,U+f145,U+f147-f149,U+f14c,U+f166,U+f16a,U+f172,U+f175-f178,U+f18e,U+f190,U+f196,U+f1b1,U+f1d9,U+f1db,U+f1f7,U+f20c,U+f219,U+f230,U+f24a,U+f250,U+f278,U+f27b,U+f283,U+f28c,U+f28e,U+f29b-f29c,U+f2b7,U+f2ba,U+f2bc,U+f2be,U+f2c0,U+f2c3,U+f2d3-f2d4}</style>
+
+ </head>
+ <body >
+  <!--div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div-->
+ <section id="back">
+<canvas id="canvas" style="width: 100%; height: 100%; padding: 0;margin: 0;" width="1654" height="747"></canvas>
+<div id="id"><div id="example" class="rainbow-animated" style="display: none;">
+<span>TOPCHYI KRYSTYNA</span></div><div id="examplee" class="rainbow-animatedd" style="display: none;">
+<span>Frontend Developer & UI/UX Design </span></div></div>
+<footer>
+  <div class="footer">
+      <ul class="social-media-container">
+  <li class="social-media whatsapp">
+    <a href="https://wa.me/380957440259"><i class="fab fa-whatsapp"></i></a>
+  </li>
+  <li class="social-media telegram">
+    <a href="https://t.me/NightWitch2707"><i class="fab fa-telegram"></i></a>
+  </li>
+  <li class="social-media viber">
+    <a href="viber://chat?number=380957440259"><i class="fab fa-viber"></i></a>
+  </li>
+  <li class="social-media gmail">
+    <a href="mailto:ktopchiy2707@gmail.com"><i class="fa fa-envelope"></i></a>
+  </li>
+  <li class="social-media linkedin">
+    <a href="https://www.linkedin.com/in/krystyna-topchyi-17a2551b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </li>
+</ul>       
+    </div>
+
+            
+    </footer>
+
+<section id="info">
+  <div class="flex_withphoto">
+  <div class="text">
+    <div class="anim-items">
+    <div class="title anim-show">About me</div></div>
+    <div class="anim-items"><div class="about anim-items"><p class="firstpara anim-show"><b>Hello :)</b><br>
+My name is <b>Krystyna</b> and I'm a student at Odessa National Technological University, where I'm studying <b>Computer Science.</b> 
+However, currently, I'm located in <b>Munich, Germany.</b> <br>
+
+</p></div></div>
+
+<div class="anim-items"><p class="secondpara anim-show">My first job was at Marketing Office, where I was making billboards, brochures, sliders for websites, certificates, and others.
+There I got skills in <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="ps" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 17.469 17.469"  style="enable-background:new 0 0 17.469 17.469; width: 18px; height: 17px" xml:space="preserve" >
+<g>
+  <g>
+    <path  style="fill:#030104;" d="M5.925,4.982c-0.442,0-0.742,0.043-0.898,0.087v2.841C5.213,7.952,5.44,7.966,5.754,7.966
+      c1.157,0,1.871-0.585,1.871-1.571C7.624,5.511,7.01,4.982,5.925,4.982z"/>
+    <path style="fill:#030104;" d="M16.4,0.002H1.07C0.479,0.002,0,0.48,0,1.069v15.329c0,0.59,0.479,1.069,1.07,1.069H16.4
+      c0.59,0,1.069-0.479,1.069-1.069V1.07C17.469,0.48,16.99,0.002,16.4,0.002z M8.894,8.624c-0.741,0.7-1.842,1.014-3.125,1.014
+      c-0.287,0-0.543-0.014-0.743-0.043v3.442H2.869V3.541C3.54,3.428,4.482,3.342,5.811,3.342c1.341,0,2.299,0.256,2.94,0.771
+      c0.617,0.486,1.03,1.286,1.03,2.228S9.466,8.08,8.894,8.624z M12.145,13.179c-0.916,0-1.729-0.198-2.258-0.485l0.385-1.556
+      c0.4,0.241,1.229,0.527,1.873,0.527c0.655,0,0.927-0.228,0.927-0.586c0-0.356-0.214-0.527-1.027-0.799
+      c-1.442-0.485-2-1.271-1.986-2.099c0-1.298,1.114-2.286,2.842-2.286c0.814,0,1.542,0.187,1.97,0.4l-0.385,1.5
+      c-0.314-0.172-0.913-0.399-1.514-0.399c-0.527,0-0.826,0.214-0.826,0.571c0,0.328,0.269,0.499,1.126,0.8
+      c1.328,0.456,1.886,1.128,1.899,2.154C15.171,12.222,14.141,13.179,12.145,13.179z"/>
+</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+ (Photoshop), <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 455 455" style="enable-background:new 0 0 455 455 width: 18px; height: 17px;" xml:space="preserve">
+<g>
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M186.199,153.546c-3.542,14.264-25.092,96.545-25.092,96.545h52.75
+    c0,0-23.461-82.281-26.966-96.545H186.199z"/>
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M240.023,351.601l-18.428-61.115h-68.192l-17.074,61.115
+    H80.455l72.949-238.312h70.621l73.885,238.312H240.023z M372.774,351.601H318.95V178.775h53.824V351.601z M345.533,157.503
+    c-16.935,0-28.317-12.078-27.936-26.86c-0.381-15.583,11.002-27.244,28.353-27.244c17.352,0,28.18,11.66,28.595,27.244
+    C374.545,145.425,363.302,157.503,345.533,157.503z"/>
+</g><g></g><g>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+ (Illustrator).
+But I have always been <b>passionate about making websites</b>. Then I started learning <b>HTML, CSS, JS</b> also <svg width="18px" height="17px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.5 2C6.84315 2 5.5 3.34315 5.5 5C5.5 6.65685 6.84315 8 8.5 8H15.5C17.1569 8 18.5 6.65685 18.5 5C18.5 3.34315 17.1569 2 15.5 2H8.5Z" fill="black"/>
+<path d="M15.5 9C13.8431 9 12.5 10.3431 12.5 12C12.5 13.6569 13.8431 15 15.5 15C17.1569 15 18.5 13.6569 18.5 12C18.5 10.3431 17.1569 9 15.5 9Z" fill="black"/>
+<path d="M5.5 12C5.5 10.3431 6.84315 9 8.5 9H11.5V15H8.5C6.84315 15 5.5 13.6569 5.5 12Z" fill="black"/>
+<path d="M8.5 16C6.84315 16 5.5 17.3431 5.5 19C5.5 20.6569 6.84315 22 8.5 22C10.1569 22 11.5 20.6569 11.5 19V16H8.5Z" fill="black"/>
+</svg>
+ (Figma), and with that, I'm making websites.</p></div>
+ <div class="anim-items"><p class="secondpara anim-show">I’m fluent in <b>Ukrainian</b> and <b>Russian</b> languages, but I am also good at spoken and written <b>English</b> (B2 level).</p></div>
+ <div class="anim-items"><p class="secondpara anim-show">
+If you want to see <b>my works</b>, you should scroll down to the <b>next section.</b>
+  </div>  </div><img src="photosmall.jpg" class="myphoto"></div>
+    
+  </div>
+</section >
+<section id="show" >
+  <div class="anim-items">
+  <div class="title anim-show" id="second_title">Work</div></div>
+  <div class="">
+    <div class="full_block anim-items">
+  <div class="blocks anim-show">
+    <div class="more_info">
+    <div class="block js-open-modal" data-modal="1">
+      <a href=""><div class="img"><img src="museum.png"></div></a>
+      <div class="text_site">Landing Page - Art Museum</div>
+      <div class="button">See more</div>
+    </div></div></div>
+    <div class="blockss anim-show">
+    <div class="more_info">
+    <div class="block js-open-modal" data-modal="2">
+      <a href=""><div class="img"><img src="log.png"></div></a>
+      <div class="text_site">Container Logistic and Trading</div>s
+      <div class="button">See more</div>
+    </div></div>   
+  </div>
+</div></div>
+  
+<div class="full_block anim-items">
+  <div class="blocks anim-show">
+    <div class="more_info">
+    <div class="block js-open-modal" data-modal="3">
+      <a href=""><div class="img"><img src="vinery.png"></div></a>
+      <div class="text_site">Winemaking in Ukraine</div>
+      <div class="button">See more</div>
+    </div></div></div>
+    <div class="blockss anim-show">
+    <div class="more_info">
+    <div class="block js-open-modal" data-modal="4">
+      <a href=""><div class="img"><img src="unik.png"></div></a>
+      <div class="text_site">A History of the University</div>
+      <div class="button">See more</div>
+    </div></div>   
+    
+  </div></div>
+
+  <div class="full_block anim-items">
+    <div class="blocks anim-show">
+    <div class="more_info">
+    <div class="block js-open-modal" data-modal="5">
+      <a href=""><div class="img"><img src="gallery/10.jpg"></div></a>
+      <div class="text_site">Marketing designer</div>
+      <div class="button">See more</div>
+    </div></div></div>
+    <div class="blockss anim-show">
+    <div class="more_info">
+    <div class="block js-open-modal" data-modal="6">
+      <a href=""><div class="img"><img src="gallery/32.jpg"></div></a>
+      <div class="text_site">Different works</div>
+      <div class="button">See more</div>
+    </div></div>   
+    
+  </div></div>
+  <div class="footerrr">Designed & Built by Topchyi Krystyna</div>
+
+
+
+<!-- Несколько модальных окон -->
+
+<div class="modal" data-modal="1">
+  <div class="background_example">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <div class="website_title">
+     Landing Page - Art Museum
+   </div>
+   <div class="flex_item">
+   <div class="item">
+    <div class="modal__title">Go to the project:</div>
+    <a href="https://elegant-agnesi-3b04f8.netlify.app/" target="_blank" class="project_link">link</a>
+  </div>
+  <div class="item">
+    <div class="modal__title">What was done:</div>
+    <div class="modal__title">Design, animation</div>
+  </div></div>
+  </div>
+   <div class="content_example ">
+    
+   <div class="text_example">
+     For this Art Musium was made a landing page. Design was made in Figma. Then I've made this website, using HTML, CSS, JS. 
+      Also, this website is adaptive for different type of devices.
+
+   </div>
+
+   <div class="photo_example">
+ 
+       <img src="ofam.png" class="laptop_photo">
+     
+ 
+   </div></div>
+   <div class="visit">Visit the site: <a href="https://elegant-agnesi-3b04f8.netlify.app/" target="_blank" class="visit_link">Museum</a></div>
+ 
+</div>
+
+<div class="modal" data-modal="2">
+  <div class="background_example2">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <div class="website_title">
+    Container Logistic and Trading
+   </div>
+   <div class="flex_item">
+   <div class="item">
+    <div class="modal__title">Go to the project:</div>
+    <a href="https://vigilant-wilson-00fb2e.netlify.app/" class="project_link">link</a>
+  </div>
+  <div class="item">
+    <div class="modal__title">What was done:</div>
+    <div class="modal__title">Design, animation, icons</div>
+  </div></div>
+  </div>
+   <div class="content_example">
+    
+   <div class="text_example">
+    This is a landing page, that contains information about the logistic company. I was using photoshop to edit photos, Illustrator to make icons, Figma for a prototype, and HTML, CSS, JS for a website. 
+Also, this website is adaptive for different devices and has translation to the Malay language.
+
+   </div>
+
+   <div class="photo_example">
+ 
+       <img src="logistic.png" class="laptop_photo">
+ 
+   </div></div>
+   <div class="visit">Visit the site: <a href="https://vigilant-wilson-00fb2e.netlify.app/" target="_blank" class="visit_link">Container Logistic</a></div>
+ 
+</div>
+
+<div class="modal" data-modal="3">
+  <div class="background_example3">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <div class="website_title">
+     Winemaking in Ukraine
+   </div>
+   <div class="flex_item">
+   <div class="item">
+    <div class="modal__title">Go to the project:</div>
+    <a href="https://awesome-ardinghelli-4c4bc7.netlify.app/" class="project_link">link</a>
+  </div>
+  <div class="item">
+    <div class="modal__title">What was done:</div>
+    <div class="modal__title">Design, icons</div>
+  </div></div>
+  </div>
+   <div class="content_example">
+    
+   <div class="text_example">
+     This website was made for my college thesis and it contains different pages. As well as some widgets, translation, and others. This site was made to help tourists. 
+They can choose a route and check what they will see there, where they can stay and what they will try out. 
+I've made this site, using HTML, CSS, and JS. Also, this website is adaptive for different devices.
+
+   </div>
+
+   <div class="photo_example">
+ 
+       <img src="wine.png" class="laptop_photo">
+ 
+   </div></div>
+   <div class="visit">Visit the site: <a href="https://awesome-ardinghelli-4c4bc7.netlify.app/" target="_blank" class="visit_link">Winemaking in Ukraine</a></div>
+ 
+</div>
+
+<div class="modal" data-modal="4">
+  <div class="background_example4">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <div class="website_title">
+     A History of the University
+   </div>
+   <div class="flex_item">
+   <div class="item">
+    <div class="modal__title">Go to the project:</div>
+    <a href="http://195.138.86.105:8087/" class="project_link">(still in progress)</a>
+  </div>
+  <div class="item">
+    <div class="modal__title">What was done:</div>
+    <div class="modal__title">Design, animation, database</div>
+  </div></div>
+  </div>
+   <div class="content_example">
+    
+   <div class="text_example">
+    This website is about the history of the university. There you can find lots of information about the university as well as you can listen to this information. 
+For this website, Django, Pycharm, SQLite, PHP, HTML, CSS, and JS were used. 
+Also, this website is adaptive for different devices and has translation.
+
+   </div>
+
+   <div class="photo_example">
+ 
+       <img src="history.png" class="laptop_photo">
+ 
+   </div></div>
+   <div class="visit">Visit the site: <a href="http://195.138.86.105:8087/" target="_blank" class="visit_link">(still in progress)</a></div>
+ 
+</div>
+
+<div class="modal" data-modal="5">
+  <div class="background_example5">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <div class="website_title">
+     Marketing designer
+   </div>
+   <div class="flex_item">
+   <div class="item">
+    <div class="modal__title">Here you can see some works from the period of time when I worked as a Marketing designer.</div>
+    
+  </div>
+  </div>
+  </div>
+   <div class="content_example" style="padding: 0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+<div class="gallery">
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/2.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Certificate</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/1.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Brochure</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/5.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/4.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Brochure</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/13.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/6.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/7.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Certificate</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/8.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Certificate</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/9.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/10.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/11.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/12.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Brochure</figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+   </div>
+   
+ 
+</div>
+
+<div class="modal" data-modal="6">
+  <div class="background_example6">
+   <!--   Svg иконка для закрытия окна  -->
+   <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+   <div class="website_title">
+     Different Works
+   </div>
+   <div class="flex_item">
+   <div class="item">
+    <div class="modal__title">Here you can see some different works that I've made during the time when I worked and practiced</div>
+  </div>
+</div>
+  </div>
+   <div class="content_example" style="padding: 0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+<div class="gallery">
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/23.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Retouch</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/31.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Font</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/27.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Retouch</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/30.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Font</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/25.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Retouch</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/20.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Font</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/32.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/33.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Slider</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/29.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Retouch</figcaption>
+      </figure>
+    </a>
+  </div>
+  
+  <div class="gallery__column">
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/24.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Font</figcaption>
+      </figure>
+    </a>
+
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/28.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Retouch</figcaption>
+      </figure>
+    </a>
+    
+    <a href="#" class="gallery__link">
+      <figure class="gallery__thumb">
+        <img src="gallery/34.jpg" class="gallery__image">
+        <figcaption class="gallery__caption">Font</figcaption>
+      </figure>
+    </a>
+  </div>
+</div>
+   </div>
+ 
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+</section>
+<section class="header">
+ 
+    <div class="header__bg-title" id="header__bg-title-scene">
+      <img data-depth="0.4" src="cat.png" alt="cat" class="header">
+    </div>
+     
+ 
+</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+ 
+    let headerBgTitle = document.getElementById('header__bg-title-scene');
+    let headerBgParticles = document.getElementById('header__bg-particles-scene');
+    let headerOffer = document.getElementById('header__offer-scene');
+ 
+    let headerBgTitleInstance = new Parallax(headerBgTitle);
+    let headerBgParticlesleInstance = new Parallax(headerBgParticles);
+    let headerOfferInstance = new Parallax(headerOffer);
+ 
+</script>
+
+<script type="text/javascript">
+  const animItems = document.querySelectorAll('.anim-items');
+
+if(animItems.length > 0){
+  window.addEventListener('scroll', animOnScroll);
+  function animOnScroll(){
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      if(animItemHeight > window.innerHeight){
+       animItemPoint = window.innerHeight - window.innerHeight/animStart;
+      } 
+
+      if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+        animItem.classList.add('active');
+      }else{
+        if(!animItem.classList.contains('anim-no-hide')){
+           animItem.classList.remove('active');
+        }
+      }
+    }
+  }
+
+function offset(el){
+  const rect = el.getBoundingClientRect(),
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return{top: rect.top + scrollTop, left: rect.left + scrollLeft}
+}
+setTimeout(() => {
+  animOnScroll();
+}, 300)
+
+
+}
+
+</script>
+
+<script type="text/javascript">HamalFx.prototype._in = function() {
+  var self = this;
+
+  this.DOM.stackItems.map(function(e, i) {
+    e.style.opacity = i !== self.totalItems - 1 ? 0.2*i+0.2 : 1
+  });
+
+  anime({
+    targets: this.DOM.stackItems,
+    duration: 1000,
+    easing: 'easeOutExpo',
+    translateY: function(target, index) {
+      return -1*index*5;
+    },
+    rotate: function(target, index, cnt) {
+      if( index === cnt - 1 ) {
+        return 0;
+      }
+      else {
+        return index%2 ? (cnt-index)*1 : -1*(cnt-index)*1;
+      }
+    },
+    scale: function(target, index, cnt) {
+      if( index === cnt - 1 ) {
+        return 1;
+      }
+      else {
+        return 1.05;
+      }
+    },
+    delay: function(target, index, cnt) {
+      return (cnt-index-1)*30
+    }
+  });
+  
+  anime({
+    targets: this.DOM.img,
+    duration: 1000,
+    easing: 'easeOutExpo',
+    scale: 0.7
+  });
+
+  anime({
+    targets: [this.DOM.columns.left, this.DOM.columns.right],
+    duration: 1000,
+    easing: 'easeOutExpo',
+    translateX: function(target, index) {
+      return index === 0 ? -30 : 30;
+    }
+  });
+  
+};
+
+HamalFx.prototype._out = function() {
+  var self = this;
+
+  anime({
+    targets: this.DOM.stackItems,
+    duration: 500,
+    easing: 'easeOutExpo',
+    translateY: 0,
+    rotate: 0,
+    scale: 1,
+    opacity: function(target, index, cnt) {
+      return index !== cnt - 1 ? 0 : 1
+    }
+  });
+
+  anime({
+    targets: this.DOM.img,
+    duration: 1000,
+    easing: 'easeOutElastic',
+    scale: 1
+  });
+
+  anime({
+    targets: [this.DOM.columns.left, this.DOM.columns.right],
+    duration: 500,
+    easing: 'easeOutExpo',
+    translateX: 0
+  });
+};
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $.fn.animate_Text = function() {
+  var string = this.text();
+  return this.each(function(){
+   var $this = $(this);
+   $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+   $this.find('span.new').each(function(i, el){
+    setTimeout(function(){ $(el).addClass('div_opacity'); }, 150 * i);
+   });
+  });
+ };
+ $('#example').show();
+ $('#example').animate_Text();
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+ $.fn.animate_Text = function() {
+  var string = this.text();
+  return this.each(function(){
+   var $this = $(this);
+   $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+   $this.find('span.new').each(function(i, el){
+    setTimeout(function(){ $(el).addClass('div_opacityy'); }, 75 * i);
+   });
+  });
+ };
+ $('#examplee').show();
+ $('#examplee').animate_Text();
+});
+</script>
+<script type="text/javascript">
+  
+    const canvas = document.getElementById("canvas");
+    const c = canvas.getContext("2d");
+
+    let w;
+    let h;
+
+    const setCanvasExtents = () => {
+      w = document.body.clientWidth;
+      h = document.body.clientHeight;
+      canvas.width = w;
+      canvas.height = h;
+    };
+
+    setCanvasExtents();
+
+    window.onresize = () => {
+      setCanvasExtents();
+    };
+
+    const makeStars = count => {
+      const out = [];
+      for (let i = 0; i < count; i++) {
+        const s = {
+          x: Math.random() * 1600 - 800,
+          y: Math.random() * 900 - 450,
+          z: Math.random() * 1000
+        };
+        out.push(s);
+      }
+      return out;
+    };
+
+    let stars = makeStars(10000);
+
+    const clear = () => {
+      c.fillStyle = "black";
+      c.fillRect(0, 0, canvas.width, canvas.height);
+    };
+
+    const putPixel = (x, y, brightness) => {
+      const intensity = brightness * 255;
+      const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+      c.fillStyle = rgb;
+      c.fillRect(x, y, 1, 1);
+    };
+
+    const moveStars = distance => {
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const s = stars[i];
+        s.z -= distance;
+        while (s.z <= 1) {
+          s.z += 1000;
+        }
+      }
+    };
+
+    let prevTime;
+    const init = time => {
+      prevTime = time;
+      requestAnimationFrame(tick);
+    };
+
+    const tick = time => {
+      let elapsed = time - prevTime;
+      prevTime = time;
+
+      moveStars(elapsed * 0.1);
+
+      clear();
+
+      const cx = w / 2;
+      const cy = h / 2;
+
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const star = stars[i];
+
+        const x = cx + star.x / (star.z * 0.001);
+        const y = cy + star.y / (star.z * 0.001);
+
+        if (x < 0 || x >= w || y < 0 || y >= h) {
+          continue;
+        }
+
+        const d = star.z / 1000.0;
+        const b = 1 - d * d;
+
+        putPixel(x, y, b);
+      }
+
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(init);
+  
+</script>
+
+ </body>
